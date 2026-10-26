@@ -1,0 +1,179 @@
+{
+  "started_utc": "2026-10-26T03:08:23+00:00",
+  "wall_clock_s": 42.2,
+  "definitions": "Motif baseline for the H4 magnitude correlations (project plan, section 4.5).\n\nThe baseline routes by region (promoter and enhancer variants -> a, 3'UTR variants -> c), so\nonly its signed score is used, as the predicted effect on the correct rate. Definitions, fixed\nbefore any comparison with measured effects:\n\nPromoter and enhancer variants (satMutMPRA; hg38 plus strand, ref and alt are single bases):\n  - Motifs: JASPAR 2024 CORE vertebrates non-redundant PFMs (MEME bundle). Counts are\n    probability x nsites; a pseudocount of 0.8 is split evenly over the four bases (0.2 each).\n    PWM = log2((count + 0.2) / (nsites + 0.8) / 0.25), uniform background.\n  - Match score: for each variant, allele and motif, the best PWM score over every window of\n    the motif's width that contains the variant, on both strands (the reverse-complement PWM on\n    the plus strand). delta = best(alt) - best(ref). An N in the hg38 context takes the\n    column's lowest score.\n  - TF weight: log1p of K562 expression in fragments per kb per million. For genes in\n    data/processed/k562/whole_cell_counts.parquet: exonic counts (exon_wc*) divided by each\n    sample's library size (counts per million), averaged over samples, divided by the gene's\n    union exon length in kb. That table holds only the split autosomes, so every other gene\n    (chrX, which carries GATA1, among them) takes the mean FPKM of the two ENCODE K562 RSEM\n    quantifications (ENCFF136UBW, ENCFF171FQU), which is the same unit (Spearman 0.90 and\n    median log1p difference 0 on shared genes). JASPAR names are upper-cased, a \"(var.N)\"\n    suffix is dropped, and the symbol is looked up among GENCODE v44 gene_name values (any\n    gene type; a symbol with several gene_ids takes the largest weight). Dimers A::B take the\n    smaller weight of the two partners. A TF whose symbol is not found (fusions such as\n    EWSR1-FLI1, names without a human gene) or that has no expression value gets weight 0.\n  - Score: the delta of the motif maximizing weight x |delta|, signed, so a gained match\n    predicts a positive effect. Motifs with weight 0 (TFs not expressed in K562 or not found)\n    can never be selected; when weight x |delta| is 0 for every motif the score is 0.\n\n3'UTR variants (MapUTR and Su et al.; insert_ref and insert_alt, the 164-nt insert in\ntranscript orientation):\n  - ARE: the number of ATTTA occurrences, overlapping allowed.\n  - Seed matches: TargetScan 8 miR_Family_Info.txt rows with Species ID 9606 and Family\n    Conservation? == 2 (broadly conserved), deduplicated on Seed+m8. With S the reverse\n    complement of Seed+m8 in DNA (7 nt, pairing with miRNA nt 8 to 2) and s = S[1:] (nt 7 to\n    2), a canonical site is an occurrence of s that is preceded by S[0] (7mer-m8), followed by\n    A (7mer-A1), or both (8mer). Each insert position carrying a site for any family counts\n    once, so an 8mer is one site and families sharing a 6mer do not double count.\n  - Score: -(delta ARE + delta seed sites), delta = alt - ref, so gaining a destabilizing\n    element predicts lower abundance.\n\nOutputs: runs/phase3/motif_baseline.parquet (one row per input row, keyed by variant_id,\nsource, cell_line and the input row number, since some 3'UTR variants are measured more than\nonce under the same key) and results/phase3/motif_baseline/summary.json with the Spearman rho\nbetween score and log2_effect on significant variants per variant set, per element (promoter\nset) and per cell line, and the share of significant variants with a nonzero score.\n",
+  "downloads": {
+    "jaspar": {
+      "url": "https://jaspar.elixir.no/download/data/2024/CORE/JASPAR2024_CORE_vertebrates_non-redundant_pfms_meme.txt",
+      "file": "JASPAR2024_CORE_vertebrates_non-redundant_pfms_meme.txt",
+      "sha256": "dd494278d356a4e170908c74d6d8eb746a2c7504d6210cd51017141f21a65b18"
+    },
+    "targetscan": {
+      "url": "https://www.targetscan.org/vert_80/vert_80_data_download/miR_Family_Info.txt.zip",
+      "file": "miR_Family_Info.txt.zip",
+      "sha256": "d91827b9c9524f2b970d85f61050ecfa9b8cb7ca395c5f7952b9c21cb3dc3b7a",
+      "extracted": "miR_Family_Info.txt",
+      "extracted_sha256": "1d8ca5bf384be4e82c39c4b1d0d21762ecc2bb3f38198413c61d61882308f2fc"
+    }
+  },
+  "counts": {
+    "motifs": 879,
+    "motifs_tf_found": 870,
+    "motifs_weight_positive": 649,
+    "mirna_families_broadly_conserved_human": 108,
+    "unique_seed_m8": 108,
+    "rows": {
+      "promoter_enhancer": 24947,
+      "utr3": 37747
+    },
+    "significant": {
+      "promoter_enhancer": 5166,
+      "utr3": 6029
+    },
+    "promoter_unique_sites": 20019
+  },
+  "significant_variants": {
+    "promoter_enhancer": {
+      "all": {
+        "n": 5166,
+        "rho": 0.0019349354709728528
+      },
+      "share_nonzero": 1.0,
+      "per_cell_line": {
+        "HEK293T": {
+          "n": 342,
+          "rho": 0.03836932244844377
+        },
+        "HEL 92.1.7": {
+          "n": 453,
+          "rho": -0.04410320530902203
+        },
+        "HaCaT": {
+          "n": 405,
+          "rho": -0.007581572304155951
+        },
+        "HeLa": {
+          "n": 10,
+          "rho": 0.30155130896849885
+        },
+        "HepG2": {
+          "n": 2221,
+          "rho": -0.01230260176417551
+        },
+        "K562": {
+          "n": 862,
+          "rho": -0.010466483703255956
+        },
+        "LNCaP": {
+          "n": 13,
+          "rho": -0.027624414793761997
+        },
+        "SF7996": {
+          "n": 301,
+          "rho": -0.09500100469656717
+        },
+        "SK-MEL-28": {
+          "n": 559,
+          "rho": 0.14906524578575572
+        }
+      },
+      "per_element": {
+        "BCL11A": {
+          "n": 21,
+          "rho": -0.4247156492797542
+        },
+        "FOXE1": {
+          "n": 10,
+          "rho": 0.30155130896849885
+        },
+        "GP1BB": {
+          "n": 169,
+          "rho": 0.010055487989694113
+        },
+        "HBB": {
+          "n": 74,
+          "rho": 0.06996986171816072
+        },
+        "HBG1": {
+          "n": 189,
+          "rho": -0.010009476534969553
+        },
+        "HNF4A": {
+          "n": 23,
+          "rho": -0.002969566444955812
+        },
+        "IRF4": {
+          "n": 559,
+          "rho": 0.14906524578575572
+        },
+        "IRF6": {
+          "n": 405,
+          "rho": -0.007581572304155951
+        },
+        "LDLR": {
+          "n": 690,
+          "rho": -0.004583075700762008
+        },
+        "MSMB": {
+          "n": 97,
+          "rho": 0.3347775186767194
+        },
+        "MYC_rs11986220": {
+          "n": 13,
+          "rho": -0.027624414793761997
+        },
+        "MYC_rs6983267": {
+          "n": 60,
+          "rho": 0.11805691931985339
+        },
+        "PKLR": {
+          "n": 862,
+          "rho": -0.010466483703255956
+        },
+        "SORT1": {
+          "n": 1531,
+          "rho": -0.06635278283631801
+        },
+        "TERT": {
+          "n": 463,
+          "rho": -0.058966190773661636
+        }
+      }
+    },
+    "utr3": {
+      "all": {
+        "n": 6029,
+        "rho": 0.03146894214059208
+      },
+      "share_nonzero": 0.13269198872118096,
+      "per_cell_line": {
+        "HEK293": {
+          "n": 2700,
+          "rho": 0.03650411757689672
+        },
+        "HEK293T": {
+          "n": 2,
+          "rho": null
+        },
+        "HeLa": {
+          "n": 3244,
+          "rho": 0.03349245481083208
+        },
+        "SH-SY5Y": {
+          "n": 83,
+          "rho": -0.04981757439098942
+        }
+      },
+      "per_source": {
+        "MapUTR": {
+          "n": 5944,
+          "rho": 0.0348906923099745
+        },
+        "Su2025": {
+          "n": 85,
+          "rho": -0.0517954270651441
+        }
+      }
+    }
+  }
+}

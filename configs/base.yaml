@@ -1,0 +1,25 @@
+# Phase 2 training, identical across arms (section 7.1). Priors and assay noise parameters are
+# each arm's Phase 1 empirical-Bayes values (sk.model.priors).
+network:
+  stem_channels: 48
+  channels: [64, 64, 96, 96, 128, 128, 128]
+  kernel: 5
+  hidden: 128
+  dropout: 0.1
+train:
+  batch_size: 32
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  n_samples: 5
+  max_epochs: 40
+  patience: 10
+  val_samples: 20
+  grad_clip: 5.0
+# Early-stopping chromosome of each fold: a training chromosome of the fold, excluded from its
+# gradient steps. Fixed before training.
+validation_chrom:
+  fold0: chr7
+  fold1: chr4
+  fold2: chr9
+  fold3: chr16
+  fold4: chr10

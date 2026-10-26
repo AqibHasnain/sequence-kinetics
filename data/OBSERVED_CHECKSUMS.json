@@ -1,0 +1,302 @@
+{
+ "encode/ENCSR000AEL_rep1_ENCFF136UBW.tsv": {
+  "bytes": 10880926,
+  "sha256": "e5b75b2c844ed5669a5e7f0c1b89d00b92aeb858118589d45b8c4abfdc789893",
+  "url": "https://www.encodeproject.org/files/ENCFF136UBW/@@download/ENCFF136UBW.tsv"
+ },
+ "encode/ENCSR000AEL_rep2_ENCFF171FQU.tsv": {
+  "bytes": 10874690,
+  "sha256": "9badf422985d51e1f0816c3ac8eca5ed8f3e68b452e2037e40b724e185c14828",
+  "url": "https://www.encodeproject.org/files/ENCFF171FQU/@@download/ENCFF171FQU.tsv"
+ },
+ "genome/gencode.v44.basic.annotation.gtf.gz": {
+  "bytes": 29570410,
+  "sha256": "3e52f82c63f8fd860bf632ccde10441c05751f4c342ad08c0a98e9e2700171a5",
+  "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.basic.annotation.gtf.gz"
+ },
+ "genome/hg19ToHg38.over.chain.gz": {
+  "bytes": 227698,
+  "sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+  "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz"
+ },
+ "genome/hg38.fa.gz": {
+  "bytes": 983659424,
+  "sha256": "c1dd87068c254eb53d944f71e51d1311964fce8de24d6fc0effc9c61c01527d4",
+  "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz"
+ },
+ "gse126522/GSE126522_RNAlevels.csv.gz": {
+  "bytes": 232405,
+  "sha256": "585c0b49667db123f9ff6d0730a422ec84b7d96500919fc4160caa0685b654e6",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE126nnn/GSE126522/suppl/GSE126522_RNAlevels.csv.gz"
+ },
+ "gse126522/GSE126522_time_course_slam_CPM.csv.gz": {
+  "bytes": 1049417,
+  "sha256": "03e24c7fab41825fbb149997eedd03849eda5e90c5a57c917ff60a299454c42c",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE126nnn/GSE126522/suppl/GSE126522_time_course_slam_CPM.csv.gz"
+ },
+ "gse207924/GSE207924_Table_S1.xlsx": {
+  "bytes": 32704220,
+  "sha256": "b81f15a1707668f2126114660b5ea06bb71e24a579a9d7980ce66ea85decdaa5",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE207nnn/GSE207924/suppl/GSE207924_Table_S1.xlsx"
+ },
+ "gse207924/GSE207924_processed_data_files.tar.gz": {
+  "bytes": 114748986,
+  "sha256": "df88acc2d9540bcc72d6ea07d2439b4224b9fe69fd7c7f39d875f5d5859b427b",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE207nnn/GSE207924/suppl/GSE207924_processed_data_files.tar.gz"
+ },
+ "gse264556/GSE264556_counts_exon.tsv.gz": {
+  "bytes": 848901,
+  "sha256": "ad35f247edca365cf72478ced856511a272b7ab2b53fffe6a5b526711b0d6348",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264556/suppl/GSE264556_CG20230908_counts_exon.tsv.gz"
+ },
+ "gse264556/GSE264556_counts_gene.tsv.gz": {
+  "bytes": 919435,
+  "sha256": "be6d8df2bf37b23aec2175e8a9d2c8effafb0cfa55560d4678f79c6dc74a103b",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264556/suppl/GSE264556_CG20230908_counts_gene.tsv.gz"
+ },
+ "gse75792/GSE75792_README.txt": {
+  "bytes": 3108,
+  "sha256": "f0dd51a00798c285fc3d119123eec5456f4f97dd573a93e5d28b64d080ef5f1c",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE75nnn/GSE75792/suppl/GSE75792_README.txt"
+ },
+ "gse75792/GSE75792_binned_count_table.txt.gz": {
+  "bytes": 63955659,
+  "sha256": "97277fd78b9b0bf8e75762f5e2b7763558218a663809c26f0d755845d339c317",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE75nnn/GSE75792/suppl/GSE75792_binned_count_table.txt.gz"
+ },
+ "gse75792/GSE75792_binning_anno.txt.gz": {
+  "bytes": 74856168,
+  "sha256": "8160c40b778b4bdd7017843242f27f9f2213187a075abc880ebb3e827e3cff39",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE75nnn/GSE75792/suppl/GSE75792_binning_anno.txt.gz"
+ },
+ "gse75792/GSE75792_transcript.annotation.gtf.gz": {
+  "bytes": 1332737,
+  "sha256": "2c7a31a83d81db465889973860b0a00dab5c081997432ada1fb396db9e6707b9",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE75nnn/GSE75792/suppl/GSE75792_transcript.annotation.gtf.gz"
+ },
+ "jaspar/JASPAR2024_CORE_vertebrates_non-redundant_pfms_meme.txt": {
+  "bytes": 469100,
+  "sha256": "dd494278d356a4e170908c74d6d8eb746a2c7504d6210cd51017141f21a65b18",
+  "url": "https://jaspar.elixir.no/download/data/2024/CORE/JASPAR2024_CORE_vertebrates_non-redundant_pfms_meme.txt"
+ },
+ "maputr/41467_2024_46795_MOESM4_ESM.xlsx": {
+  "bytes": 5135110,
+  "sha256": "d2bdcafb68ae388f84da125d283dc0282cdc81545d704baf81730d7fd613f782",
+  "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-46795-7/MediaObjects/41467_2024_46795_MOESM4_ESM.xlsx"
+ },
+ "satmutmpra/BCL11A.csv": {
+  "bytes": 164423,
+  "sha256": "ded6f47b3abb1d0afdf65302cc020ecca4585d279028bbfea83aefc1b42c3943",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000014-a-1/scores"
+ },
+ "satmutmpra/BCL11A.meta.json": {
+  "bytes": 11433,
+  "sha256": "c84a1cbdac496dcb38e65f9c1d08450ebdacff0796a5f412a338bfbc9d628337",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000014-a-1"
+ },
+ "satmutmpra/FOXE1.csv": {
+  "bytes": 162326,
+  "sha256": "655520e382eae9e6814ec0e7c82efae826bee0961f1f4433e9d226653c6eb0d9",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000016-a-1/scores"
+ },
+ "satmutmpra/FOXE1.meta.json": {
+  "bytes": 11413,
+  "sha256": "bb82a8669ba3a419374c295c54c4f12ebfadb77eb14a0ec0a6fb24b2a70e38de",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000016-a-1"
+ },
+ "satmutmpra/GP1BB.csv": {
+  "bytes": 101320,
+  "sha256": "407e14088f2b4770450c13cb05103ba254b765e969bde2509db89eb289fb1c36",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000017-a-1/scores"
+ },
+ "satmutmpra/GP1BB.meta.json": {
+  "bytes": 11225,
+  "sha256": "4f414047612b741dc5483972a1e18b572233a43a85255cd5e2e0552da145898d",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000017-a-1"
+ },
+ "satmutmpra/HBB.csv": {
+  "bytes": 48580,
+  "sha256": "ec8b189f70c740f0ab2a11863a0a464fb421d93fefb9da1240cd3831872f57c6",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1/scores"
+ },
+ "satmutmpra/HBB.meta.json": {
+  "bytes": 11008,
+  "sha256": "1b3383dca72b028fcd484150a249766468d343cb3a81907e64281a7af7e2f11c",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1"
+ },
+ "satmutmpra/HBG1.csv": {
+  "bytes": 71065,
+  "sha256": "8a9e1d4c1ff15a5eb97f8cb4bd66455d83386f43fc62b35d8274da1e5ef66335",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000019-a-1/scores"
+ },
+ "satmutmpra/HBG1.meta.json": {
+  "bytes": 11108,
+  "sha256": "07c4a2a1f2fb25ec553bfaee1d5caccf611dcba2ad19f813feec5a775fbc575f",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000019-a-1"
+ },
+ "satmutmpra/HNF4A.csv": {
+  "bytes": 77273,
+  "sha256": "6dc2555a40aaf5a96f75484442bd3d37c3569d1343d74c6a5a8034d53e6a7e9b",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000020-a-1/scores"
+ },
+ "satmutmpra/HNF4A.meta.json": {
+  "bytes": 11116,
+  "sha256": "1873e0e68ca7d79aa7954f5756166cd351472b72298c5de3b95afd8443631266",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000020-a-1"
+ },
+ "satmutmpra/IRF4.csv": {
+  "bytes": 118455,
+  "sha256": "a94694a90445bf9852d46f5d4e84a1ad699f69e74309fe8136b94e30267922d7",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000021-a-1/scores"
+ },
+ "satmutmpra/IRF4.meta.json": {
+  "bytes": 11283,
+  "sha256": "22677fc1d40a21c697963f42b6a81ddb93288480fd07aa74d457138f52860b21",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000021-a-1"
+ },
+ "satmutmpra/IRF6.csv": {
+  "bytes": 149656,
+  "sha256": "b8e0665dea043e6f710ebb2642d22f6ee2ed3a947e61888725776823ae8c7470",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000022-a-1/scores"
+ },
+ "satmutmpra/IRF6.meta.json": {
+  "bytes": 10728,
+  "sha256": "75f409b3e83f3ea653a9e656eba50ab38afd62fe58fe7ad52daee1d214446955",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000022-a-1"
+ },
+ "satmutmpra/LDLR_rep1.csv": {
+  "bytes": 83158,
+  "sha256": "5900bba4f317420f6814539d7100ab1076de1ccb138a68ce11376f8fdd18acc6",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000023-a-1/scores"
+ },
+ "satmutmpra/LDLR_rep1.meta.json": {
+  "bytes": 10991,
+  "sha256": "ff6909b761e52c09c74b93272c440612ac1569827f03cc13aa1ac0c938e70df3",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000023-a-1"
+ },
+ "satmutmpra/LDLR_rep2.csv": {
+  "bytes": 84106,
+  "sha256": "eb7fed22c8e38c24c89158ba7c6eb70ad5185728931e27b294d34c4c922d0cba",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000023-a-2/scores"
+ },
+ "satmutmpra/LDLR_rep2.meta.json": {
+  "bytes": 10989,
+  "sha256": "46111d4d8f47e7449385973b03c03b2cc32e2ed3569783e6295f984975a663d4",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000023-a-2"
+ },
+ "satmutmpra/MSMB.csv": {
+  "bytes": 160153,
+  "sha256": "e3cf661f6be83859bed5903d71c8f641190c2af7bcf910018ad1bc01fd62a3d1",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000024-a-1/scores"
+ },
+ "satmutmpra/MSMB.meta.json": {
+  "bytes": 11421,
+  "sha256": "908b899585a492b4d3277bb3d1f24c4e1476faa3af478bf7603eeca7ef12ac16",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000024-a-1"
+ },
+ "satmutmpra/MYC_rs11986220.csv": {
+  "bytes": 130867,
+  "sha256": "e4ca0cef8ea3f6739989dbc47376715198469a63f0ca3ee590ccede459fd3684",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000026-a-1/scores"
+ },
+ "satmutmpra/MYC_rs11986220.meta.json": {
+  "bytes": 11377,
+  "sha256": "68277abe57912ca2c9fcf30e34751f77f1eef4782ea2e03124a3a5771ab34a96",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000026-a-1"
+ },
+ "satmutmpra/MYC_rs6983267.csv": {
+  "bytes": 155382,
+  "sha256": "56e62b14175173f7947634f0f43e990a58664571a5b0ed6e31729e6068dd90bb",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000025-a-1/scores"
+ },
+ "satmutmpra/MYC_rs6983267.meta.json": {
+  "bytes": 11484,
+  "sha256": "efe57a478ceb1cb7d6ca84b45d8dcd07cf62bbdbc0371049e1fabbc7afd63eeb",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000025-a-1"
+ },
+ "satmutmpra/PKLR_24h.csv": {
+  "bytes": 137868,
+  "sha256": "5b340753929f30090a25bcfd54e0392ff869d5be8e417347429b74b08276f835",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000027-a-1/scores"
+ },
+ "satmutmpra/PKLR_24h.meta.json": {
+  "bytes": 11351,
+  "sha256": "b49d006887b5e43463360c54fbc18a3365a52c9f617fefa5e715249a771d6832",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000027-a-1"
+ },
+ "satmutmpra/PKLR_48h.csv": {
+  "bytes": 138931,
+  "sha256": "c2df8c0d1e6018c82615494e9020d06f00abdab0a61254787690da64fb185509",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000027-b-1/scores"
+ },
+ "satmutmpra/PKLR_48h.meta.json": {
+  "bytes": 11353,
+  "sha256": "65268ca9ab92214c7c521974166aceb2f2171867dcf6de48a1e8a7d457c4bda0",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000027-b-1"
+ },
+ "satmutmpra/SORT1_rep1.csv": {
+  "bytes": 150227,
+  "sha256": "c22f993fcc4fa2167424394919fe9a303fbf81c95fc7b4cab8e1bad2a3887019",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000029-a-1/scores"
+ },
+ "satmutmpra/SORT1_rep1.meta.json": {
+  "bytes": 11405,
+  "sha256": "259b51c8f0cbf941b285c15f89c6c45b13ef3184c6eb8dd2c4969776c459e44a",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000029-a-1"
+ },
+ "satmutmpra/SORT1_rep2.csv": {
+  "bytes": 155082,
+  "sha256": "6fe8489437652964a84541fddc31e50da453df2757dfe60fea6eefe0f74f0f0c",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000029-a-2/scores"
+ },
+ "satmutmpra/SORT1_rep2.meta.json": {
+  "bytes": 11405,
+  "sha256": "18e1c3168efbbeb6705f41698d8c74aa5b388d91be5e87eca880e0dc1038f24d",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000029-a-2"
+ },
+ "satmutmpra/TERT_HEK293T.csv": {
+  "bytes": 75124,
+  "sha256": "320f9e1d9446265f024367fde3994831d8dc4aa2f8b262fac77003929ae456d1",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-a-1/scores"
+ },
+ "satmutmpra/TERT_HEK293T.meta.json": {
+  "bytes": 11089,
+  "sha256": "0853dd8eab161fb4aa0042778317d29883ad4c502db9f516556170904a2ae8a4",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-a-1"
+ },
+ "satmutmpra/TERT_SF7996.csv": {
+  "bytes": 74651,
+  "sha256": "8b0d9fb336572b414ffb71ba4618fa2cec5f7aca50884e1c1f905cd375d2eb68",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-b-1/scores"
+ },
+ "satmutmpra/TERT_SF7996.meta.json": {
+  "bytes": 11130,
+  "sha256": "fc202ebe0801f2d8031273182429496fae0b48e75f73f134f6fbbe5f8d262572",
+  "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-b-1"
+ },
+ "su2025/elife-97682-supp1-v1.xlsx": {
+  "bytes": 914485,
+  "sha256": "7339f268a965a31a903821db29607a5b30b8ea10174e83ccb453143bb32df264",
+  "url": "https://cdn.elifesciences.org/articles/97682/elife-97682-supp1-v1.xlsx"
+ },
+ "targetscan/miR_Family_Info.txt.zip": {
+  "bytes": 162636,
+  "sha256": "d91827b9c9524f2b970d85f61050ecfa9b8cb7ca395c5f7952b9c21cb3dc3b7a",
+  "url": "https://www.targetscan.org/vert_80/vert_80_data_download/miR_Family_Info.txt.zip"
+ },
+ "vectors/DQ904455.gb": {
+  "bytes": 9276,
+  "sha256": "68abd1899f4a2b80f84f25df9efa04d858a1327f5cd115c151ef6ef0bf3b9deb",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&rettype=gb&retmode=text&id=DQ904455"
+ },
+ "vectors/U55762.gb": {
+  "bytes": 9370,
+  "sha256": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&rettype=gb&retmode=text&id=U55762"
+ },
+ "wu2019_elife/elife-45396-fig1-data1-v2.xlsx": {
+  "bytes": 5616973,
+  "sha256": "f5ad19c5fd623d48cc0a953ebcc91313a0ec7e1f83f38725cc24befee09e6638",
+  "url": "https://cdn.elifesciences.org/articles/45396/elife-45396-fig1-data1-v2.xlsx"
+ }
+}

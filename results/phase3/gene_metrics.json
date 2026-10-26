@@ -1,0 +1,558 @@
+{
+ "arms": {
+  "SS-E": {
+   "seed0": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.26297512879426216,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.3008153181014282,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.27028981221146176,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.510755404247055,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.19811480354435107,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.29729729768067426,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.21473725049453316,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.45758236425343557,
+      "n": 17757
+     }
+    },
+    "coverage90": {
+     "wc_exon": 0.23150846516791562,
+     "wc_intron": 0.8506106022758813,
+     "timelapse": 0.8345837113545955,
+     "n_genes": 7206
+    }
+   },
+   "seed1": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.26825184410650504,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.30128655866700954,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.30926261611973155,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5134431762585371,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.228517439937063,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.30644887841868595,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.24881258401831105,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.47530043932972527,
+      "n": 17757
+     }
+    }
+   },
+   "seed2": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.2720536113566762,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.307914905230069,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.27849622367860843,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5032154939151934,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.21722552790156754,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.2902673477114871,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.20491734634499767,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4318607464877185,
+      "n": 17757
+     }
+    }
+   }
+  },
+  "SS-EI": {
+   "seed0": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.23855289986666034,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.2715173493816705,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.3089652710163354,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4990651692052529,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.21311714241663424,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.29633528422035876,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.23856153160007113,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4468906910929823,
+      "n": 17757
+     }
+    },
+    "coverage90": {
+     "wc_exon": 0.2546142103802387,
+     "wc_intron": 0.35071468220927005,
+     "timelapse": 0.826383557819806,
+     "n_genes": 7206
+    },
+    "amortization_gap": {
+     "n_genes": 200,
+     "kl_nuts_to_amortized_mean": 121.91011145037811,
+     "kl_nuts_to_amortized_median": 50.443792721207345,
+     "kl_nuts_to_prior_mean": 4.618411372268586,
+     "kl_nuts_to_prior_median": 4.221865991607722,
+     "mean_shift_in_nuts_sd_median_abc": [
+      0.5591791364277693,
+      0.4632947152554472,
+      0.6341238077307165
+     ],
+     "mean_shift_in_nuts_sd_mean_abc": [
+      0.7348367047033945,
+      0.6435655852841157,
+      0.7788845102512179
+     ],
+     "amortized_sd_median_abc": [
+      0.4911656975746155,
+      0.4975783985045481,
+      0.4881029018971754
+     ],
+     "nuts_sd_median_abc": [
+      0.5802902293585839,
+      0.5839173909627606,
+      0.58452266605415
+     ],
+     "spearman_amortized_vs_nuts_mean_abc": {
+      "a": 0.47087077176929426,
+      "b": 0.2709802745068627,
+      "c": 0.504777619440486
+     }
+    }
+   },
+   "seed1": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.263922912001364,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.2889711740491958,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.312472554427506,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5084145124541594,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.21515890527305348,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.29039112729166944,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.2385126806527368,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.45328782815710045,
+      "n": 17757
+     }
+    }
+   },
+   "seed2": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.22948541776589002,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.3002889085285169,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.2705692623457848,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4825200613033398,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.21757357315631737,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.2931237652125035,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.2233825485170104,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4439237287101334,
+      "n": 17757
+     }
+    }
+   }
+  },
+  "KIN": {
+   "seed0": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.48628061821245866,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.49258926598745706,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.24340983174191463,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5185127089461231,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.4519758434456773,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.47923268999868757,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.1643997685688891,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.45051423428755244,
+      "n": 17757
+     }
+    },
+    "coverage90": {
+     "wc_exon": 0.25107549264501805,
+     "wc_intron": 0.3530391340549542,
+     "timelapse": 0.6783097215437225,
+     "n_genes": 7206
+    },
+    "amortization_gap": {
+     "n_genes": 200,
+     "kl_nuts_to_amortized_mean": 154.95446874995866,
+     "kl_nuts_to_amortized_median": 65.81428690441734,
+     "kl_nuts_to_prior_mean": 6.320038319769863,
+     "kl_nuts_to_prior_median": 6.011689152724701,
+     "mean_shift_in_nuts_sd_median_abc": [
+      3.9571251141307693,
+      2.7800309159111096,
+      3.2980054146543907
+     ],
+     "mean_shift_in_nuts_sd_mean_abc": [
+      4.824418897150503,
+      3.2423813795282985,
+      4.626574380641171
+     ],
+     "amortized_sd_median_abc": [
+      0.13173514604568481,
+      0.17049774314127591,
+      0.09369618153169756
+     ],
+     "nuts_sd_median_abc": [
+      0.14379109880208948,
+      0.17411219664607144,
+      0.119042759836476
+     ],
+     "spearman_amortized_vs_nuts_mean_abc": {
+      "a": 0.530422260556514,
+      "b": 0.4011400285007126,
+      "c": 0.6086762169054227
+     }
+    }
+   },
+   "seed1": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.4475585404930413,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.48462929470360777,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.2771730832887372,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5007875426394386,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.44678718448262367,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.4836228713314541,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.1791977651786339,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4460348750612009,
+      "n": 17757
+     }
+    }
+   },
+   "seed2": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.49093867796509755,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.49995336651399336,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.26664558699699564,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5293371683617111,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.4732679281369327,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.4955259694304237,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.16231721353928732,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4764399790338384,
+      "n": 17757
+     }
+    }
+   }
+  },
+  "KIN-1T": {
+   "seed0": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.3126313667760532,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.3270794729513758,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.24725889291344025,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5071848710173574,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.37025251665975767,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.3200338321049679,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.1401287513785823,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.47142016915527085,
+      "n": 17757
+     }
+    },
+    "coverage90": {
+     "wc_exon": 0.2401817929503192,
+     "wc_intron": 0.3483555370524563,
+     "timelapse": 0.6246248865936214,
+     "n_genes": 7206
+    },
+    "amortization_gap": {
+     "n_genes": 200,
+     "kl_nuts_to_amortized_mean": 272.45763331283564,
+     "kl_nuts_to_amortized_median": 94.52844491870599,
+     "kl_nuts_to_prior_mean": 6.865261582445026,
+     "kl_nuts_to_prior_median": 6.475526262106348,
+     "mean_shift_in_nuts_sd_median_abc": [
+      5.4706228764675915,
+      5.728178188238735,
+      2.911487803457253
+     ],
+     "mean_shift_in_nuts_sd_mean_abc": [
+      6.590023286235046,
+      6.676545623947367,
+      3.8723971749973787
+     ],
+     "amortized_sd_median_abc": [
+      0.10913453623652458,
+      0.0597009701434896,
+      0.172237087960605
+     ],
+     "nuts_sd_median_abc": [
+      0.1130834083341214,
+      0.06647579141606677,
+      0.16036465937959318
+     ],
+     "spearman_amortized_vs_nuts_mean_abc": {
+      "a": 0.43380034500862524,
+      "b": 0.36902722568064206,
+      "c": 0.45570539263481596
+     }
+    }
+   }
+  },
+  "KIN-SHUF": {
+   "seed0": {
+    "test_chromosomes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.276036963284996,
+      "n": 1076
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.32241607223026686,
+      "n": 1391
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.3170412694662299,
+      "n": 2146
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.5221133325947563,
+      "n": 2139
+     }
+    },
+    "all_genes": {
+     "c_vs_slamseq_decay": {
+      "rho": 0.2367550016294806,
+      "n": 8534
+     },
+     "c_vs_timelapse_decay": {
+      "rho": 0.3021400192418806,
+      "n": 11760
+     },
+     "a_vs_ttseq_synthesis_proxy": {
+      "rho": 0.22786914235481945,
+      "n": 17589
+     },
+     "predicted_vs_observed_exonic_level": {
+      "rho": 0.4565768624385932,
+      "n": 17757
+     }
+    },
+    "coverage90": {
+     "wc_exon": 0.24875104079933388,
+     "wc_intron": 0.34710657785179017,
+     "timelapse": 0.6409205108521181,
+     "n_genes": 7206
+    }
+   }
+  }
+ }
+}

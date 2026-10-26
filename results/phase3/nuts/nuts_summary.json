@@ -1,0 +1,32 @@
+{
+  "KIN": {
+    "n_genes": 200,
+    "max_r_hat": 1.0065984468759637,
+    "min_ess": 2638.176906346813,
+    "total_divergences": 0,
+    "genes_r_hat_gt_1.01": [],
+    "wall_clock_s": 137.9,
+    "start_utc": "2026-10-26T03:06:41Z",
+    "git_sha": "32f33c256db4f403f5e97bf6c3e88276324499b3"
+  },
+  "SS-EI": {
+    "n_genes": 200,
+    "max_r_hat": 1.0062739004522372,
+    "min_ess": 2924.398092159838,
+    "total_divergences": 0,
+    "genes_r_hat_gt_1.01": [],
+    "wall_clock_s": 100.8,
+    "start_utc": "2026-10-26T03:08:58Z",
+    "git_sha": "32f33c256db4f403f5e97bf6c3e88276324499b3"
+  },
+  "KIN-1T": {
+    "n_genes": 200,
+    "max_r_hat": 1.0056484309184233,
+    "min_ess": 2875.5566105121234,
+    "total_divergences": 0,
+    "genes_r_hat_gt_1.01": [],
+    "wall_clock_s": 128.5,
+    "start_utc": "2026-10-26T03:10:39Z",
+    "git_sha": "32f33c256db4f403f5e97bf6c3e88276324499b3"
+  }
+}

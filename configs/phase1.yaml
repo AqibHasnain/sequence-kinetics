@@ -1,0 +1,35 @@
+# Phase 1: per-gene free posteriors, identifiability and simulation-based calibration.
+seed: 0
+threads: 8
+# Starting decay rate for every gene, log(ln 2 / 4 h).
+c_init: -1.7578
+fit:
+  steps: 4000
+  lr: 0.03
+  lr_final: 0.001
+  n_samples: 5
+# Designs fitted to real data, in this order; KIN-1T reuses KIN's TT-seq scale and contamination.
+designs: [KIN, KIN-1T, SS-EI, SS-E]
+fisher:
+  half_life_h_min: 0.05
+  half_life_h_max: 200.0
+  n_grid: 81
+  # c is observable where its posterior variance is at most 10% of its prior variance.
+  contraction_threshold: 0.9
+jacobian:
+  n_draws: 100
+  rtol: 1.0e-9
+sbc:
+  n_genes: 1000
+  n_draws: 99
+  n_bins: 20
+  steps: 3000
+  lr: 0.03
+  lr_final: 0.001
+  n_samples: 5
+  min_p: 0.01
+  coverage_level: 0.9
+  coverage_range: [0.85, 0.95]
+h1:
+  width_ratio_min: 3.0
+  sd_ratio_min: 0.8

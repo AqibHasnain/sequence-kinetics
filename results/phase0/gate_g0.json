@@ -1,0 +1,57 @@
+{
+ "criterion_1_genes": {
+  "genes_meeting_criterion": 7207,
+  "genes_with_counts": 7263,
+  "genes_with_labeled_times": 14255,
+  "pass": true,
+  "threshold": 5000
+ },
+ "criterion_2_half_lives": {
+  "assays": [
+   "half_life_timelapse_h",
+   "half_life_slamseq_h"
+  ],
+  "n_shared_genes": 8738,
+  "n_shared_genes_in_criterion_1_set": 6230,
+  "pass": true,
+  "spearman_rho": 0.6110076875669384,
+  "spearman_rho_in_criterion_1_set": 0.6150457699171178,
+  "threshold": 0.5
+ },
+ "pass": true,
+ "variant_sets": {
+  "promoter_enhancer": {
+   "by_source": {
+    "LDLR_rep1": 954,
+    "LDLR_rep2": 954,
+    "PKLR_24h": 1407,
+    "PKLR_48h": 1407,
+    "SORT1_rep1": 1790,
+    "SORT1_rep2": 1798
+   },
+   "rows": 8310,
+   "unique_null": 1645,
+   "unique_significant": 1807,
+   "unique_significant_by_split": {
+    "train": 1807
+   },
+   "unique_variants": 4159
+  },
+  "utr3": {
+   "by_source": {
+    "MapUTR": 34307,
+    "Su2025": 3440
+   },
+   "rows": 37747,
+   "unique_null": 13059,
+   "unique_significant": 4700,
+   "unique_significant_by_split": {
+    "excluded": 179,
+    "test": 570,
+    "train": 3703,
+    "validation": 248
+   },
+   "unique_variants": 19281
+  }
+ }
+}

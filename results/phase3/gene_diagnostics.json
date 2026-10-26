@@ -1,0 +1,282 @@
+{
+ "post_hoc": true,
+ "decay": {
+  "n_genes": 1076,
+  "integrity": {
+   "genes_off_their_fold": 0,
+   "genes_also_in_training_or_early_stopping": 0,
+   "genes_predicted_twice": 0
+  },
+  "rho": {
+   "KIN": 0.48628061821245866,
+   "KIN-SHUF": 0.276036963284996,
+   "SS-EI": 0.23855289986666034,
+   "SS-E": 0.26297512879426216,
+   "KIN-1T": 0.3126313667760532,
+   "covariates only": 0.4437868655740215
+  },
+  "paired_difference": {
+   "KIN - KIN-SHUF": {
+    "estimate": 0.21024365492746266,
+    "ci95": [
+     0.16181885190124048,
+     0.2578590886034808
+    ]
+   },
+   "KIN - SS-EI": {
+    "estimate": 0.24772771834579832,
+    "ci95": [
+     0.19312289666743465,
+     0.3000993826347335
+    ]
+   },
+   "KIN-SHUF - SS-EI": {
+    "estimate": 0.037484063418335656,
+    "ci95": [
+     0.0019492377038836132,
+     0.07094619398263595
+    ]
+   },
+   "KIN - covariates only": {
+    "estimate": 0.04249375263843713,
+    "ci95": [
+     0.014407258992894533,
+     0.06992403658109345
+    ]
+   }
+  },
+  "partial_rho_given_covariate_baseline": {
+   "KIN": {
+    "estimate": 0.22861545723341836,
+    "ci95": [
+     0.16905687232771024,
+     0.28561774490006686
+    ]
+   },
+   "KIN-SHUF": {
+    "estimate": 0.0769566383843997,
+    "ci95": [
+     0.021031597715343336,
+     0.13596515327296743
+    ]
+   },
+   "SS-EI": {
+    "estimate": 0.05062928180283025,
+    "ci95": [
+     -0.00789857006744356,
+     0.11511810145988359
+    ]
+   }
+  },
+  "by_kmer_share": {
+   "no shared 32-mer": {
+    "n": 389,
+    "KIN": 0.49747986357585383,
+    "KIN-SHUF": 0.2767159535929578,
+    "SS-EI": 0.2282087297590968
+   },
+   "share <= 0.01": {
+    "n": 636,
+    "KIN": 0.48671809969430785,
+    "KIN-SHUF": 0.29490333509265104,
+    "SS-EI": 0.2250588259714477
+   },
+   "share > 0.01": {
+    "n": 440,
+    "KIN": 0.4835879599302964,
+    "KIN-SHUF": 0.25170025765535037,
+    "SS-EI": 0.2577970678849299
+   }
+  },
+  "kmer_share_quantiles_50_90_99": [
+   0.004237877368126731,
+   0.036386483488851915,
+   0.08122185478145251
+  ],
+  "memorization": {
+   "KIN/fold1": {
+    "training_genes": {
+     "rho": 0.4559718576685142,
+     "n": 700
+    },
+    "held_out_genes": {
+     "rho": 0.5429835397889301,
+     "n": 1696
+    }
+   },
+   "KIN/fold3": {
+    "training_genes": {
+     "rho": 0.41239787952920015,
+     "n": 700
+    },
+    "held_out_genes": {
+     "rho": 0.4936624762011094,
+     "n": 1750
+    }
+   },
+   "KIN-SHUF/fold1": {
+    "training_genes": {
+     "rho": 0.2196613229239826,
+     "n": 700
+    },
+    "held_out_genes": {
+     "rho": 0.27772729937470275,
+     "n": 1696
+    }
+   },
+   "KIN-SHUF/fold3": {
+    "training_genes": {
+     "rho": 0.20754801540411308,
+     "n": 700
+    },
+    "held_out_genes": {
+     "rho": 0.24537204546000152,
+     "n": 1750
+    }
+   }
+  },
+  "ceiling_timelapse_vs_slam": {
+   "rho": 0.6429690984653845,
+   "n": 1065
+  }
+ },
+ "amortization": {
+  "fold": "fold1",
+  "seed": 0,
+  "arms": {
+   "KIN": {
+    "posterior_sd_median_abc": {
+     "training_genes": [
+      0.13069882988929749,
+      0.17178990903160588,
+      0.0932640132532547
+     ],
+     "early_stopping_genes": [
+      0.12460601702332497,
+      0.16613943225443073,
+      0.08632993605277577
+     ],
+     "held_out_genes": [
+      0.13173514604568481,
+      0.17049774314127591,
+      0.09369618153169756
+     ],
+     "held_out_nuts": [
+      0.14379109880208948,
+      0.17411219664607144,
+      0.119042759836476
+     ]
+    },
+    "held_out": {
+     "sd_of_mean_error_vs_nuts_abc": [
+      1.0147472789678373,
+      0.771418520254695,
+      0.6558849242952286
+     ],
+     "kl_nuts_to_amortized_median": 65.81428690441734,
+     "kl_amortized_to_nuts_median": 62.88603317680654,
+     "kl_nuts_to_widened_median": 5.550639681031361,
+     "exon_coverage90_amortized": 0.2825,
+     "exon_coverage90_widened": 0.885,
+     "exon_coverage90_nuts": 0.97125
+    },
+    "training_vs_phase1_posterior": {
+     "n": 400,
+     "sd_of_mean_error_abc": [
+      0.9465363875410666,
+      0.8077828738001406,
+      0.7113164808605142
+     ],
+     "kl_phase1_to_amortized_median": 84.10713549508085,
+     "exon_coverage90_amortized": 0.2775,
+     "exon_coverage90_phase1": 0.9625
+    },
+    "early_stopping_vs_phase1_posterior": {
+     "n": 200,
+     "sd_of_mean_error_abc": [
+      0.9880388604877982,
+      0.6954259119457701,
+      0.7527502528983894
+     ],
+     "kl_phase1_to_amortized_median": 94.07194978313751,
+     "exon_coverage90_amortized": 0.2425,
+     "exon_coverage90_phase1": 0.97
+    }
+   },
+   "SS-EI": {
+    "posterior_sd_median_abc": {
+     "training_genes": [
+      0.4919750690460205,
+      0.5012718382273362,
+      0.4894462810732779
+     ],
+     "early_stopping_genes": [
+      0.501826137304306,
+      0.503074972923289,
+      0.49136114455128155
+     ],
+     "held_out_genes": [
+      0.4911656975746155,
+      0.4975783985045481,
+      0.4881029018971754
+     ],
+     "held_out_nuts": [
+      0.5802902293585839,
+      0.5839173909627606,
+      0.58452266605415
+     ]
+    },
+    "held_out": {
+     "sd_of_mean_error_vs_nuts_abc": [
+      0.5646234667268044,
+      0.5012755891780959,
+      0.5979048341776456
+     ],
+     "kl_nuts_to_amortized_median": 50.443792721207345,
+     "kl_amortized_to_nuts_median": 48.45401739480353,
+     "kl_nuts_to_widened_median": 4.026134874708784,
+     "exon_coverage90_amortized": 0.2675,
+     "exon_coverage90_widened": 0.89375,
+     "exon_coverage90_nuts": 0.96125
+    }
+   },
+   "KIN-1T": {
+    "posterior_sd_median_abc": {
+     "training_genes": [
+      0.10895247757434845,
+      0.06127121239368491,
+      0.17303428464708767
+     ],
+     "early_stopping_genes": [
+      0.10453979671001434,
+      0.05550152758066302,
+      0.16255440497149443
+     ],
+     "held_out_genes": [
+      0.10913453623652458,
+      0.0597009701434896,
+      0.172237087960605
+     ],
+     "held_out_nuts": [
+      0.1130834083341214,
+      0.06647579141606677,
+      0.16036465937959318
+     ]
+    },
+    "held_out": {
+     "sd_of_mean_error_vs_nuts_abc": [
+      1.1384231353333993,
+      0.713025609379384,
+      0.9849948404909534
+     ],
+     "kl_nuts_to_amortized_median": 94.52844491870599,
+     "kl_amortized_to_nuts_median": 79.8678687457595,
+     "kl_nuts_to_widened_median": 6.200956511327879,
+     "exon_coverage90_amortized": 0.3125,
+     "exon_coverage90_widened": 0.86875,
+     "exon_coverage90_nuts": 0.96375
+    }
+   }
+  }
+ }
+}

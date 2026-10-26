@@ -1,0 +1,210 @@
+{
+ "lcl_discordant_lead_variants": "not evaluated; Phase 4 is conditional",
+ "pass": true,
+ "promoter_enhancer": {
+  "by_element": {
+   "BCL11A": {
+    "cell_lines": [
+     "HEL 92.1.7"
+    ],
+    "chrom": "chr2",
+    "fold": "fold3",
+    "null": 1135,
+    "significant": 21
+   },
+   "FOXE1": {
+    "cell_lines": [
+     "HeLa"
+    ],
+    "chrom": "chr9",
+    "fold": "fold3",
+    "null": 1610,
+    "significant": 10
+   },
+   "GP1BB": {
+    "cell_lines": [
+     "HEL 92.1.7"
+    ],
+    "chrom": "chr22",
+    "fold": "fold1",
+    "null": 486,
+    "significant": 169
+   },
+   "HBB": {
+    "cell_lines": [
+     "HEL 92.1.7"
+    ],
+    "chrom": "chr11",
+    "fold": "fold2",
+    "null": 171,
+    "significant": 74
+   },
+   "HBG1": {
+    "cell_lines": [
+     "HEL 92.1.7"
+    ],
+    "chrom": "chr11",
+    "fold": "fold2",
+    "null": 234,
+    "significant": 189
+   },
+   "HNF4A": {
+    "cell_lines": [
+     "HEK293T"
+    ],
+    "chrom": "chr20",
+    "fold": "fold4",
+    "null": 287,
+    "significant": 23
+   },
+   "IRF4": {
+    "cell_lines": [
+     "SK-MEL-28"
+    ],
+    "chrom": "chr6",
+    "fold": "fold3",
+    "null": 161,
+    "significant": 559
+   },
+   "IRF6": {
+    "cell_lines": [
+     "HaCaT"
+    ],
+    "chrom": "chr1",
+    "fold": "fold0",
+    "null": 556,
+    "significant": 405
+   },
+   "LDLR": {
+    "cell_lines": [
+     "HepG2"
+    ],
+    "chrom": "chr19",
+    "fold": "fold1",
+    "null": 358,
+    "significant": 396
+   },
+   "MSMB": {
+    "cell_lines": [
+     "HEK293T"
+    ],
+    "chrom": "chr10",
+    "fold": "fold1",
+    "null": 523,
+    "significant": 97
+   },
+   "MYC_rs11986220": {
+    "cell_lines": [
+     "LNCaP"
+    ],
+    "chrom": "chr8",
+    "fold": "fold0",
+    "null": 1212,
+    "significant": 13
+   },
+   "MYC_rs6983267": {
+    "cell_lines": [
+     "HEK293T"
+    ],
+    "chrom": "chr8",
+    "fold": "fold0",
+    "null": 1098,
+    "significant": 60
+   },
+   "PKLR": {
+    "cell_lines": [
+     "K562"
+    ],
+    "chrom": "chr1",
+    "fold": "fold0",
+    "null": 726,
+    "significant": 529
+   },
+   "SORT1": {
+    "cell_lines": [
+     "HepG2"
+    ],
+    "chrom": "chr1",
+    "fold": "fold0",
+    "null": 561,
+    "significant": 882
+   },
+   "TERT": {
+    "cell_lines": [
+     "HEK293T",
+     "SF7996"
+    ],
+    "chrom": "chr5",
+    "fold": "fold0",
+    "null": 342,
+    "significant": 325
+   }
+  },
+  "by_fold": {
+   "fold0": {
+    "null": 4495,
+    "significant": 2214
+   },
+   "fold1": {
+    "null": 1367,
+    "significant": 662
+   },
+   "fold2": {
+    "null": 405,
+    "significant": 263
+   },
+   "fold3": {
+    "null": 2906,
+    "significant": 590
+   },
+   "fold4": {
+    "null": 287,
+    "significant": 23
+   }
+  },
+  "elements_by_fold": {
+   "fold0": 6,
+   "fold1": 3,
+   "fold2": 2,
+   "fold3": 3,
+   "fold4": 1
+  },
+  "n_elements": 15,
+  "pass": true,
+  "threshold": 150,
+  "unique_null_scoreable": 9460,
+  "unique_significant_and_null": 187,
+  "unique_significant_scoreable": 3752
+ },
+ "regime": "5-fold chromosome cross-validation (configs/splits.yaml cv_folds)",
+ "utr3": {
+  "by_fold": {
+   "fold0": {
+    "null": 2436,
+    "significant": 874
+   },
+   "fold1": {
+    "null": 2778,
+    "significant": 1053
+   },
+   "fold2": {
+    "null": 2182,
+    "significant": 781
+   },
+   "fold3": {
+    "null": 2300,
+    "significant": 807
+   },
+   "fold4": {
+    "null": 2899,
+    "significant": 1006
+   }
+  },
+  "pass": true,
+  "threshold": 150,
+  "unique_null_scoreable": 12595,
+  "unique_significant_and_null": 1426,
+  "unique_significant_on_excluded_chromosomes": 179,
+  "unique_significant_scoreable": 4521
+ }
+}
